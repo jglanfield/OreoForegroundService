@@ -12,6 +12,6 @@ class MainActivity : AppCompatActivity() {
         val scanningService = Intent(this, SomeService::class.java)
         startForegroundService(scanningService)
 
-        // startForeground() must be called within 5 seconds of the service start
+        // startForeground() must be called within 5 seconds of service creation
     }
 }
